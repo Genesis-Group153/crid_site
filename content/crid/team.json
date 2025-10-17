@@ -1,0 +1,21 @@
+[
+  {
+    "name": "Atuhaire Edgar",
+    "title": "Executive Director",
+    "photo": "/crid/Atuhaire.jpg",
+    "bio": "Public Health Specialist & Educator with 16+ years of experience in health systems strengthening, institutional development, and program implementation across East Africa. WHO/HRP Research Fellow and PhD Candidate (University of Ghana) specializing in Population, Family, and Reproductive Health. Leads CRID in research, gender & development, institutional capacity building, and youth empowerment; contributor to national strategies, training manuals, and policy reforms.",
+    "links": []
+  },
+  {
+    "name": "Humphrey Atwijukiire, BNS, MHSR",
+    "title": "Research Fellow | Health Services Researcher | Public Health Scientist",
+    "photo": "/crid/Akatwijuka.jpg",
+    "bio": "Health services researcher with expertise in health systems, mental health, climate & health, infectious disease, and digital health. Skilled in Stata, SPSS, NVivo, Atlas.ti, and R. Has contributed to malaria elimination, HIV care, climate resilience, and AI-in-health projects; authored peer-reviewed publications and secured multiple competitive research grants and fellowships.",
+    "links": [
+      {"type":"email","href":"mailto:htwijukiire@gmail.com"},
+      {"type":"tel","href":"tel:+256775131535"},
+      {"type":"external","label":"ResearchGate","href":"#"}
+    ]
+  }
+]
+

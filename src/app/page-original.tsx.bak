@@ -1,0 +1,178 @@
+import { Hero } from '@/components/Hero';
+import { Stats } from '@/components/Stats';
+import { FocusAreaCard } from '@/components/FocusAreaCard';
+import { ProgramCard } from '@/components/ProgramCard';
+import { GalleryMasonry } from '@/components/GalleryMasonry';
+import { getProfileData, getGalleryData } from '@/lib/content';
+import { ArrowRight } from 'lucide-react';
+import {
+  Heart,
+  Users,
+  TrendingUp,
+  Building,
+  GraduationCap,
+  FileText,
+  Lightbulb,
+} from 'lucide-react';
+import Link from 'next/link';
+
+const focusIcons = [Heart, Users, TrendingUp, Building, GraduationCap, FileText, Lightbulb];
+
+const stats = [
+  { value: 16, label: 'Years of Experience', suffix: '+' },
+  { value: 5, label: 'Countries', suffix: '+' },
+  { value: 50, label: 'Projects Completed', suffix: '+' },
+  { value: 100, label: 'Partners', suffix: '+' },
+];
+
+const programDescriptions = {
+  'Young Professionals Development Program (YPDP)':
+    'Empowering the next generation of leaders through mentorship, skills training, and experiential learning opportunities.',
+  'Health Systems Innovation Initiative (HSII)':
+    'Strengthening health systems through evidence-based interventions and innovative solutions for improved maternal and child health outcomes.',
+  'Gender and Equity Advancement Program (GEAP)':
+    'Promoting gender equality and women\'s empowerment through research, advocacy, and capacity building initiatives.',
+  'Community Resilience and Empowerment Project (CREP)':
+    'Building resilient communities through participatory approaches and sustainable development interventions.',
+  'Research for Policy and Practice Program (RPPP)':
+    'Translating research evidence into actionable policies and practices for improved development outcomes.',
+};
+
+export default async function Home() {
+  const profile = await getProfileData();
+  const gallery = await getGalleryData();
+
+  return (
+    <>
+      <Hero
+        title="Research. Skills. Impact."
+        description={profile.about}
+        ctaPrimary={{ text: 'Explore Our Work', href: '/focus-areas' }}
+        ctaSecondary={{ text: 'Get in Touch', href: '/contact' }}
+      />
+
+      <Stats stats={stats} />
+
+      {/* About Section */}
+      <section className="section-padding bg-white">
+        <div className="container-custom">
+          <div className="mx-auto max-w-3xl text-center">
+            <h2 className="heading-2 mb-6 text-brand-primary">
+              Advancing Sustainable Development Across Africa
+            </h2>
+            <p className="body-large mb-8">{profile.about}</p>
+            <Link href="/about" className="btn-primary group">
+              Learn More About Us
+              <ArrowRight
+                size={20}
+                className="ml-2 transition-transform group-hover:translate-x-1"
+              />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Focus Areas */}
+      <section className="section-padding bg-surface">
+        <div className="container-custom">
+          <div className="mb-12 text-center">
+            <h2 className="heading-2 mb-4 text-brand-primary">Our Focus Areas</h2>
+            <p className="body-large mx-auto max-w-2xl">
+              We deliver comprehensive solutions across multiple sectors to drive sustainable
+              development and institutional excellence.
+            </p>
+          </div>
+
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {profile.focusAreas.slice(0, 6).map((area, index) => (
+              <FocusAreaCard
+                key={index}
+                title={area.title}
+                points={area.points}
+                icon={focusIcons[index]}
+                index={index}
+              />
+            ))}
+          </div>
+
+          <div className="mt-10 text-center">
+            <Link href="/focus-areas" className="btn-secondary">
+              View All Focus Areas
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Flagship Programs */}
+      <section className="section-padding bg-white">
+        <div className="container-custom">
+          <div className="mb-12 text-center">
+            <h2 className="heading-2 mb-4 text-brand-primary">Flagship Programs</h2>
+            <p className="body-large mx-auto max-w-2xl">
+              Our signature initiatives driving measurable impact across communities and
+              institutions.
+            </p>
+          </div>
+
+          <div className="grid gap-6 lg:grid-cols-2">
+            {profile.flagshipPrograms.map((program, index) => (
+              <ProgramCard
+                key={index}
+                title={program}
+                description={programDescriptions[program as keyof typeof programDescriptions]}
+                index={index}
+              />
+            ))}
+          </div>
+
+          <div className="mt-10 text-center">
+            <Link href="/programs" className="btn-primary group">
+              Explore All Programs
+              <ArrowRight
+                size={20}
+                className="ml-2 transition-transform group-hover:translate-x-1"
+              />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Impact Gallery */}
+      <section className="section-padding bg-surface">
+        <div className="container-custom">
+          <div className="mb-12 text-center">
+            <h2 className="heading-2 mb-4 text-brand-primary">Our Impact in Action</h2>
+            <p className="body-large mx-auto max-w-2xl">
+              See how we're making a difference in communities across Africa.
+            </p>
+          </div>
+
+          <GalleryMasonry images={gallery} />
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="section-padding bg-gradient-to-r from-brand-primary to-brand-secondary">
+        <div className="container-custom text-center">
+          <h2 className="heading-2 mb-6 text-white">Ready to Partner With Us?</h2>
+          <p className="body-large mx-auto mb-8 max-w-2xl text-slate-200">
+            Join us in advancing sustainable development and building capacity across Africa.
+            Let's create lasting impact together.
+          </p>
+          <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <Link href="/contact" className="btn-primary">
+              Start a Conversation
+            </Link>
+            <Link
+              href="/services"
+              className="inline-flex items-center justify-center rounded-lg border-2 border-white bg-transparent px-6 py-3 text-base font-semibold text-white transition-all hover:bg-white hover:text-brand-primary"
+            >
+              View Our Services
+            </Link>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
+

@@ -1,0 +1,105 @@
+{
+  "tagline": "Research. Skills. Impact.",
+  "about": "CRID International (Centre for Research, Innovations, and Development) is a multidisciplinary research, training, and capacity-building organization advancing sustainable development, institutional excellence, and human capital growth across Africa. We translate evidence into practical interventions, strengthen systems in health, education, gender, and socio-economic development, and operate with the philosophy of Skilling for the Future. With work across East, Central, and West Africa, CRID delivers programs in RMNCAH, SRHR, gender analytics, organizational development, youth/women empowerment, leadership, mentorship, and education skilling - in partnership with governments, universities, development partners, and civil society.",
+  "vision": "To be the leading centre for research, innovation, and capacity development in Africa, driving evidence-based solutions and fostering sustainable human and institutional development.",
+  "mission": "To enhance institutional and human capacities through applied research, professional training, mentorship, and innovative programs that strengthen health, education, and social systems while promoting equity, resilience, and sustainability.",
+  "coreValues": [
+    "Excellence",
+    "Integrity",
+    "Innovation",
+    "Partnership",
+    "Inclusivity",
+    "Sustainability"
+  ],
+  "focusAreas": [
+    {
+      "title": "Reproductive, Maternal, Newborn & Adolescent Health (RMNCAH)",
+      "points": [
+        "Design and implement interventions to improve maternal and child outcomes",
+        "Research on adolescent health, early pregnancies, child health",
+        "Support health systems to scale quality care for vulnerable groups"
+      ]
+    },
+    {
+      "title": "Sexual & Reproductive Health and Rights (SRHR)",
+      "points": [
+        "Awareness and access to comprehensive SRH services",
+        "Training manuals, SOPs, technical guidelines for providers",
+        "Youth/community advocacy and policy dialogue"
+      ]
+    },
+    {
+      "title": "Gender Analytics & Development",
+      "points": [
+        "Research/evaluations to surface gender gaps and inform policy",
+        "Women's empowerment via skills, leadership, mentorship",
+        "Gender-responsive strategies for orgs and communities"
+      ]
+    },
+    {
+      "title": "Organizational Support & Development",
+      "points": [
+        "Capacity assessments, governance, strategic planning",
+        "Operational frameworks, policy docs, management systems",
+        "Digital transformation, KM, performance monitoring"
+      ]
+    },
+    {
+      "title": "Training, Capacity Building & Professional Development",
+      "points": [
+        "Workshops, seminars, mentorship across sectors",
+        "Tailor-made in-house training aligned to org needs",
+        "Leadership/management training for public, CSO, private"
+      ]
+    },
+    {
+      "title": "Program Impact Assessment, Proposals & Grant Writing",
+      "points": [
+        "MEL frameworks and evaluations",
+        "High-quality proposal support and donor engagement",
+        "Research/feasibility studies for program design"
+      ]
+    },
+    {
+      "title": "Education Support & Skilling for the Future",
+      "points": [
+        "Competency-based education and skilling",
+        "Experiential learning, digital literacy, vocational training",
+        "Linking skills to jobs, entrepreneurship, empowerment"
+      ]
+    }
+  ],
+  "services": [
+    "Research & Policy Advisory",
+    "Professional Training & Mentorship",
+    "Monitoring, Evaluation & Learning (MEL)",
+    "Organizational & Institutional Development",
+    "Leadership & Mentorship Programs",
+    "Community Empowerment Initiatives",
+    "Program Design, Proposal Writing & Grant Management",
+    "Knowledge Management & Innovation Platforms"
+  ],
+  "approach": [
+    "Evidence-driven, participatory, and practical",
+    "Experiential learning with mentorship and hands-on workshops",
+    "Inclusive, gender-responsive, and youth-focused",
+    "Sustainable capacity via governance, strategy, performance",
+    "Collaborative partnerships with government, academia, CSOs, and development partners"
+  ],
+  "legitimacy": "Registered in Uganda with expanding operations in Rwanda, Kenya, Ghana, and South Sudan; networks across government, universities, international NGOs, and regional professional associations.",
+  "flagshipPrograms": [
+    "Young Professionals Development Program (YPDP)",
+    "Health Systems Innovation Initiative (HSII)",
+    "Gender and Equity Advancement Program (GEAP)",
+    "Community Resilience and Empowerment Project (CREP)",
+    "Research for Policy and Practice Program (RPPP)"
+  ],
+  "contact": {
+    "hq": "Plot [Insert Address], Kampala, Uganda",
+    "phone": "+256-772699471",
+    "email": "info@cridinternational.org",
+    "web": "www.cridinternational.org",
+    "regional": ["Kigali, Rwanda", "Nairobi, Kenya", "Juba, South Sudan"]
+  }
+}
+
