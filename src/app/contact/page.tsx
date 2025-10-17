@@ -83,7 +83,7 @@ export default function ContactPage() {
                       required
                       value={formData.name}
                       onChange={handleChange}
-                      className="w-full rounded-lg border border-slate-300 px-4 py-2 focus:border-brand-accent focus:outline-none focus:ring-2 focus:ring-brand-accent/20"
+                      className="w-full rounded-lg border border-slate-300 px-4 py-3 text-base focus:border-brand-accent focus:outline-none focus:ring-2 focus:ring-brand-accent/20"
                       placeholder="John Doe"
                     />
                   </div>
@@ -102,7 +102,7 @@ export default function ContactPage() {
                       required
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full rounded-lg border border-slate-300 px-4 py-2 focus:border-brand-accent focus:outline-none focus:ring-2 focus:ring-brand-accent/20"
+                      className="w-full rounded-lg border border-slate-300 px-4 py-3 text-base focus:border-brand-accent focus:outline-none focus:ring-2 focus:ring-brand-accent/20"
                       placeholder="john@example.com"
                     />
                   </div>
@@ -119,7 +119,7 @@ export default function ContactPage() {
                     required
                     value={formData.subject}
                     onChange={handleChange}
-                    className="w-full rounded-lg border border-slate-300 px-4 py-2 focus:border-brand-accent focus:outline-none focus:ring-2 focus:ring-brand-accent/20"
+                    className="w-full rounded-lg border border-slate-300 px-4 py-3 text-base focus:border-brand-accent focus:outline-none focus:ring-2 focus:ring-brand-accent/20"
                     placeholder="Partnership Inquiry"
                   />
                 </div>
@@ -135,7 +135,7 @@ export default function ContactPage() {
                     rows={6}
                     value={formData.message}
                     onChange={handleChange}
-                    className="w-full rounded-lg border border-slate-300 px-4 py-2 focus:border-brand-accent focus:outline-none focus:ring-2 focus:ring-brand-accent/20"
+                    className="w-full rounded-lg border border-slate-300 px-4 py-3 text-base focus:border-brand-accent focus:outline-none focus:ring-2 focus:ring-brand-accent/20"
                     placeholder="Tell us about your inquiry..."
                   />
                 </div>

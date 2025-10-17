@@ -79,7 +79,12 @@
   }
 
   .card {
-    @apply rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md;
+    @apply rounded-xl border border-slate-200 bg-white p-4 sm:p-6 shadow-sm transition-shadow hover:shadow-md;
+  }
+
+  /* Ensure images don't overflow on mobile */
+  img {
+    @apply max-w-full h-auto;
   }
 }
 

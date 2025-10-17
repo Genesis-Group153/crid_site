@@ -65,7 +65,7 @@ export function TeamModal({ member, onClose }: TeamModalProps) {
                   <p className="mb-4 leading-relaxed text-muted">{member.title}</p>
                   
                   {member.links.length > 0 && (
-                    <div className="mb-4 flex gap-2">
+                    <div className="mb-4 flex flex-wrap gap-2 justify-center sm:justify-start">
                       {member.links.map((link, idx) => (
                         <a
                           key={idx}
