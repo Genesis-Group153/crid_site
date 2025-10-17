@@ -76,7 +76,7 @@ export default function TeamPage() {
         <div className="container-custom text-center">
           <h2 className="heading-2 mb-4 text-brand-primary">Join Our Team</h2>
           <p className="body-large mx-auto mb-8 max-w-2xl">
-            We're always looking for passionate professionals who share our commitment to
+            We&apos;re always looking for passionate professionals who share our commitment to
             sustainable development and institutional excellence.
           </p>
           <a href="/contact" className="btn-primary">

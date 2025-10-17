@@ -60,7 +60,7 @@ export default function ContactPage() {
           <div className="mb-12 text-center">
             <p className="body-large mx-auto max-w-3xl">
               Get in touch with us to discuss partnerships, collaborations, or inquiries about our
-              services and programs. We're here to support your goals.
+              services and programs. We&apos;re here to support your goals.
             </p>
           </div>
 

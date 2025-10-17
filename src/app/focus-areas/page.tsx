@@ -49,10 +49,10 @@ export default async function FocusAreasPage() {
       <section className="section-padding bg-surface">
         <div className="container-custom text-center">
           <h2 className="heading-2 mb-4 text-brand-primary">
-            Let's Collaborate on Your Next Initiative
+            Let&apos;s Collaborate on Your Next Initiative
           </h2>
           <p className="body-large mx-auto mb-8 max-w-2xl">
-            Our multidisciplinary team is ready to support your organization's goals with
+            Our multidisciplinary team is ready to support your organization&apos;s goals with
             evidence-based solutions.
           </p>
           <a href="/contact" className="btn-primary">

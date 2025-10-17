@@ -16,7 +16,7 @@ export default async function Home() {
                 CRID International (Centre for Research, Innovations, and Development) is a multidisciplinary research, training, and capacity-building organization advancing sustainable development, institutional excellence, and human capital growth across Africa.
               </p>
               <p className="text-lg md:text-xl leading-relaxed text-slate-100 mb-6">
-                We translate evidence into practical interventions, strengthen systems in health, education, gender, and socio-economic development, and operate with the philosophy of <span className="font-semibold text-brand-accent">"Skilling for the Future."</span>
+                We translate evidence into practical interventions, strengthen systems in health, education, gender, and socio-economic development, and operate with the philosophy of <span className="font-semibold text-brand-accent">&quot;Skilling for the Future.&quot;</span>
               </p>
               <p className="text-lg md:text-xl leading-relaxed text-slate-100">
                 With work across East, Central, and West Africa, CRID delivers programs in RMNCAH, SRHR, gender analytics, organizational development, youth/women empowerment, leadership, mentorship, and education skilling — in partnership with governments, universities, development partners, and civil society.
