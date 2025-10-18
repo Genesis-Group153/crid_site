@@ -10,26 +10,46 @@ const config: Config = {
     extend: {
       colors: {
         brand: {
-          primary: '#0B1F3B',
-          secondary: '#1E3A8A',
-          accent: '#F59E0B',
-          'accent-dark': '#D97706',
+          primary: {
+            DEFAULT: '#C81E1E',
+            50: '#FEF2F2',
+            100: '#FEE2E2',
+            600: '#DC2626',
+            700: '#C81E1E',
+            800: '#991B1B',
+          },
+          secondary: {
+            DEFAULT: '#16A34A',
+            50: '#F0FDF4',
+            100: '#DCFCE7',
+            600: '#16A34A',
+            700: '#15803D',
+            800: '#166534',
+          },
+          accent: {
+            DEFAULT: '#111827',
+            light: '#374151',
+            dark: '#030712',
+          },
         },
         surface: {
           DEFAULT: '#F8FAFC',
           dark: '#F1F5F9',
         },
-        muted: {
-          DEFAULT: '#64748B',
-          dark: '#475569',
+        text: {
+          DEFAULT: '#0F172A',
+          light: '#475569',
+          lighter: '#64748B',
         },
-        success: '#10B981',
+        success: '#16A34A',
         info: '#3B82F6',
         warning: '#F59E0B',
       },
       fontFamily: {
-        heading: ['var(--font-heading)', 'serif'],
-        body: ['var(--font-body)', 'sans-serif'],
+        serif: ['Cambria', 'Georgia', 'Times New Roman', 'serif'],
+        sans: ['var(--font-body)', 'system-ui', 'sans-serif'],
+        heading: ['Cambria', 'Georgia', 'Times New Roman', 'serif'],
+        body: ['var(--font-body)', 'system-ui', 'sans-serif'],
       },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-in-out',

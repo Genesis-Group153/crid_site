@@ -97,7 +97,7 @@ export default async function ProgramsPage() {
               const details = programDetails[program as keyof typeof programDetails];
               return (
                 <div key={index} className="card">
-                  <h3 className="heading-3 mb-4 text-brand-primary">{program}</h3>
+                  <h3 className="heading-3 mb-4 text-brand-accent">{program}</h3>
                   <p className="body-large mb-6">{details.description}</p>
 
                   <div className="mb-6">
@@ -105,16 +105,16 @@ export default async function ProgramsPage() {
                     <ul className="space-y-2">
                       {details.objectives.map((objective, idx) => (
                         <li key={idx} className="flex items-start gap-2">
-                          <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-brand-accent" />
-                          <span className="text-slate-600">{objective}</span>
+                          <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-brand-secondary" />
+                          <span className="text-text-light">{objective}</span>
                         </li>
                       ))}
                     </ul>
                   </div>
 
                   <div className="rounded-lg bg-surface p-4">
-                    <h4 className="mb-2 font-semibold text-brand-primary">Impact Highlights</h4>
-                    <p className="text-slate-600">{details.impact}</p>
+                    <h4 className="mb-2 font-semibold text-brand-accent">Impact Highlights</h4>
+                    <p className="text-text-light">{details.impact}</p>
                   </div>
                 </div>
               );
@@ -126,7 +126,7 @@ export default async function ProgramsPage() {
       {/* CTA */}
       <section className="section-padding bg-surface">
         <div className="container-custom text-center">
-          <h2 className="heading-2 mb-4 text-brand-primary">
+          <h2 className="heading-2 mb-4 text-brand-accent">
             Interested in Partnering on a Program?
           </h2>
           <p className="body-large mx-auto mb-8 max-w-2xl">

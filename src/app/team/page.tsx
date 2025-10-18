@@ -3,6 +3,7 @@
 import { PageHeader } from '@/components/PageHeader';
 import { TeamCard } from '@/components/TeamCard';
 import { TeamModal } from '@/components/TeamModal';
+import { PersonSchema } from '@/components/PersonSchema';
 import { useState, useEffect } from 'react';
 import type { TeamMember } from '@/lib/content';
 
@@ -70,6 +71,11 @@ export default function TeamPage() {
       </section>
 
       <TeamModal member={selectedMember} onClose={() => setSelectedMember(null)} />
+
+      {/* JSON-LD for each team member */}
+      {team.map((member, index) => (
+        <PersonSchema key={index} member={member} />
+      ))}
 
       {/* Join Us CTA */}
       <section className="section-padding bg-surface">

@@ -26,13 +26,13 @@ export function TeamCard({ member, index, onClick }: TeamCardProps) {
           src={member.photo}
           alt={member.name}
           fill
-          className="object-cover object-center transition-transform group-hover:scale-105"
+          className="object-contain object-center p-2 transition-transform group-hover:scale-105"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </div>
       <div className="text-center">
-        <h3 className="heading-4 mb-2 text-brand-primary">{member.name}</h3>
-        <p className="mb-4 text-sm leading-relaxed text-muted">{member.title}</p>
+        <h3 className="heading-4 mb-2 text-brand-accent">{member.name}</h3>
+        <p className="mb-4 text-sm leading-relaxed text-text-light">{member.title}</p>
         {member.links.length > 0 && (
           <div className="flex justify-center gap-2">
             {member.links.map((link, idx) => (
@@ -40,7 +40,7 @@ export function TeamCard({ member, index, onClick }: TeamCardProps) {
                 key={idx}
                 href={link.href}
                 onClick={(e) => e.stopPropagation()}
-                className="rounded-full bg-brand-accent/10 p-2 text-brand-accent transition-colors hover:bg-brand-accent hover:text-white"
+                className="rounded-full bg-brand-primary-50 p-2 text-brand-primary transition-colors hover:bg-brand-primary hover:text-white"
                 aria-label={link.label || link.type}
               >
                 {link.type === 'email' && <Mail size={16} />}

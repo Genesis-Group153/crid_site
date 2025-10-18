@@ -1,0 +1,57 @@
+[
+  {
+    "title": "AI & Digital Skills Training",
+    "emoji": "🤖",
+    "description": "Practical AI literacy, data skills, and applied tools for teams and learners.",
+    "image": "/crid/services/ai-training.jpg"
+  },
+  {
+    "title": "Information Technology Courses",
+    "emoji": "💻",
+    "description": "Programming, software development, cybersecurity, and digital transformation.",
+    "image": "/crid/services/it-courses.jpg"
+  },
+  {
+    "title": "Short Courses & Institutional Capacity Building",
+    "emoji": "🎓",
+    "description": "Tailored upskilling, governance, strategy, and operational excellence.",
+    "image": "/crid/services/capacity-building.jpg"
+  },
+  {
+    "title": "Consultancy & Research Support",
+    "emoji": "🔬",
+    "description": "Research design, evaluations, MEL, and evidence-to-policy advisory.",
+    "image": "/crid/services/research.jpg"
+  },
+  {
+    "title": "Mentorship & School Partnerships",
+    "emoji": "🤝",
+    "description": "Youth leadership, mentorship pipelines, and educator partnerships.",
+    "image": "/crid/services/mentorship.jpg"
+  },
+  {
+    "title": "Gender Analytics & Development",
+    "emoji": "👩🏽‍🤝‍👩🏻",
+    "description": "Gender-responsive research, policy dialogue, and empowerment programs.",
+    "image": "/crid/services/gender-development.jpg"
+  },
+  {
+    "title": "RMNCAH & SRHR Programs",
+    "emoji": "🩺",
+    "description": "Maternal, newborn, adolescent health and comprehensive SRHR interventions.",
+    "image": "/crid/services/health-programs.jpg"
+  },
+  {
+    "title": "Education Support & Skilling for the Future",
+    "emoji": "📚",
+    "description": "Competency-based learning, vocational skills, and workforce readiness.",
+    "image": "/crid/services/education.jpg"
+  },
+  {
+    "title": "IT & Computer Science Solutions",
+    "emoji": "🧩",
+    "description": "Systems integration, e-learning platforms, and applied computing for orgs.",
+    "image": "/crid/services/it-solutions.jpg"
+  }
+]
+

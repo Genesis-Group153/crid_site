@@ -22,7 +22,7 @@ export function Hero({
   backgroundImage,
 }: HeroProps) {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-brand-primary via-brand-secondary to-brand-primary py-24 md:py-32">
+    <section className="relative overflow-hidden bg-gradient-to-br from-brand-primary via-brand-primary-800 to-brand-accent py-24 md:py-32">
       {backgroundImage && (
         <div
           className="absolute inset-0 bg-cover bg-center opacity-10"
@@ -42,7 +42,7 @@ export function Hero({
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2, duration: 0.6 }}
-              className="mb-4 text-sm font-semibold uppercase tracking-wider text-brand-accent"
+              className="mb-4 text-sm font-semibold uppercase tracking-wider text-brand-secondary-100"
             >
               {subtitle}
             </motion.p>

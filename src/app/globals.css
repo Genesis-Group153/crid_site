@@ -4,12 +4,11 @@
 
 @layer base {
   :root {
-    --font-heading: 'Playfair Display', serif;
-    --font-body: 'Inter', sans-serif;
+    --font-body: 'Inter', system-ui, -apple-system, sans-serif;
   }
 
   body {
-    @apply bg-white text-slate-900 font-body;
+    @apply bg-white text-text font-sans;
   }
 
   html {
@@ -32,12 +31,12 @@
 
   /* Focus visible styles for accessibility */
   *:focus-visible {
-    @apply outline-2 outline-offset-2 outline-brand-accent;
+    @apply outline-2 outline-offset-2 outline-brand-primary;
   }
 
   /* Skip to content link */
   .skip-to-content {
-    @apply absolute left-0 top-0 z-50 -translate-y-full bg-brand-primary px-6 py-3 text-white transition-transform focus:translate-y-0;
+    @apply absolute left-0 top-0 z-50 -translate-y-full bg-brand-accent px-6 py-3 text-white transition-transform focus:translate-y-0;
   }
 }
 
@@ -51,31 +50,31 @@
   }
 
   .heading-1 {
-    @apply font-heading text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl;
+    @apply font-serif text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl;
   }
 
   .heading-2 {
-    @apply font-heading text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl;
+    @apply font-serif text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl lg:text-5xl;
   }
 
   .heading-3 {
-    @apply font-heading text-2xl font-bold tracking-tight sm:text-3xl;
+    @apply font-serif text-xl font-bold tracking-tight sm:text-2xl md:text-3xl;
   }
 
   .heading-4 {
-    @apply font-heading text-xl font-semibold sm:text-2xl;
+    @apply font-serif text-lg font-semibold sm:text-xl md:text-2xl;
   }
 
   .body-large {
-    @apply text-lg leading-relaxed text-slate-700;
+    @apply text-base leading-relaxed text-text-light sm:text-lg;
   }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center rounded-lg bg-brand-accent px-6 py-3 text-base font-semibold text-white shadow-sm transition-all hover:bg-brand-accent-dark focus:outline-none focus:ring-2 focus:ring-brand-accent focus:ring-offset-2;
+    @apply inline-flex items-center justify-center rounded-lg bg-brand-primary px-6 py-3 text-base font-semibold text-white shadow-sm transition-all hover:bg-brand-primary-800 focus:outline-none focus:ring-2 focus:ring-brand-primary focus:ring-offset-2;
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center rounded-lg border-2 border-brand-primary bg-transparent px-6 py-3 text-base font-semibold text-brand-primary transition-all hover:bg-brand-primary hover:text-white focus:outline-none focus:ring-2 focus:ring-brand-primary focus:ring-offset-2;
+    @apply inline-flex items-center justify-center rounded-lg border-2 border-brand-secondary bg-transparent px-6 py-3 text-base font-semibold text-brand-secondary transition-all hover:bg-brand-secondary hover:text-white focus:outline-none focus:ring-2 focus:ring-brand-secondary focus:ring-offset-2;
   }
 
   .card {
@@ -85,6 +84,28 @@
   /* Ensure images don't overflow on mobile */
   img {
     @apply max-w-full h-auto;
+  }
+
+  /* Mobile-specific improvements */
+  @media (max-width: 640px) {
+    .container-custom {
+      @apply px-3;
+    }
+    
+    .section-padding {
+      @apply py-12;
+    }
+  }
+
+  /* Ensure touch targets are at least 44x44px */
+  button,
+  a {
+    @apply min-h-[44px] min-w-[44px];
+  }
+
+  /* Prevent horizontal scroll on mobile */
+  body {
+    @apply overflow-x-hidden;
   }
 }
 

@@ -13,6 +13,7 @@ const navItems = [
   { href: '/services', label: 'Services' },
   { href: '/programs', label: 'Programs' },
   { href: '/team', label: 'Team' },
+  { href: '/partners', label: 'Partners' },
   { href: '/resources', label: 'Resources' },
   { href: '/contact', label: 'Contact' },
 ];
@@ -36,38 +37,34 @@ export function NavBar() {
       }`}
     >
       <nav className="container-custom" aria-label="Main navigation">
-        <div className="flex h-20 items-center justify-between">
+        <div className="flex h-20 items-center justify-between sm:h-24">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3" aria-label="CRID International home">
             <Image
               src="/crid/logo.png"
               alt="CRID International"
-              width={50}
-              height={50}
+              width={80}
+              height={80}
               priority
-              className="h-12 w-auto"
+              className="h-16 w-auto sm:h-20"
             />
-            <span className="hidden font-heading text-xl font-bold text-brand-primary sm:block">
+            <span className="hidden font-serif text-xl font-bold text-brand-primary md:block lg:text-2xl">
               CRID International
             </span>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden items-center gap-1 lg:flex">
+          <div className="hidden items-center gap-0.5 xl:flex">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="rounded-lg px-4 py-2 text-sm font-medium text-slate-700 transition-colors hover:bg-surface hover:text-brand-primary"
+                className="whitespace-nowrap rounded-lg px-3 py-2 text-sm font-medium text-slate-700 transition-colors hover:bg-surface hover:text-brand-primary"
               >
                 {item.label}
               </Link>
             ))}
-          </div>
-
-          {/* CTA Button */}
-          <div className="hidden items-center gap-4 lg:flex">
-            <Link href="/contact" className="btn-primary">
+            <Link href="/contact" className="btn-primary ml-2 whitespace-nowrap">
               Work With Us
             </Link>
           </div>
@@ -75,7 +72,7 @@ export function NavBar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden rounded-lg p-2 text-slate-700 hover:bg-surface focus:outline-none focus:ring-2 focus:ring-brand-accent"
+            className="rounded-lg p-2 text-slate-700 hover:bg-surface focus:outline-none focus:ring-2 focus:ring-brand-primary xl:hidden"
             aria-label="Toggle menu"
             aria-expanded={isOpen}
           >
@@ -91,7 +88,7 @@ export function NavBar() {
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.2 }}
-              className="lg:hidden"
+              className="xl:hidden"
             >
               <div className="space-y-1 pb-4">
                 {navItems.map((item) => (
@@ -107,7 +104,7 @@ export function NavBar() {
                 <Link
                   href="/contact"
                   onClick={() => setIsOpen(false)}
-                  className="mt-4 block w-full rounded-lg bg-brand-accent px-4 py-3 text-center text-base font-semibold text-white hover:bg-brand-accent-dark"
+                  className="mt-4 block w-full rounded-lg bg-brand-primary px-4 py-3 text-center text-base font-semibold text-white hover:bg-brand-primary-800"
                 >
                   Work With Us
                 </Link>

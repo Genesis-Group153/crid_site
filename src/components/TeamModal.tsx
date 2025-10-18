@@ -43,7 +43,7 @@ export function TeamModal({ member, onClose }: TeamModalProps) {
             >
               <button
                 onClick={onClose}
-                className="absolute right-4 top-4 rounded-full p-2 text-slate-500 transition-colors hover:bg-slate-100 hover:text-brand-primary"
+                className="absolute right-4 top-4 rounded-full p-2 text-slate-500 transition-colors hover:bg-slate-100 hover:text-brand-accent"
                 aria-label="Close modal"
               >
                 <X size={24} />
@@ -55,14 +55,14 @@ export function TeamModal({ member, onClose }: TeamModalProps) {
                     src={member.photo}
                     alt={member.name}
                     fill
-                    className="object-cover object-center"
+                    className="object-contain object-center p-2"
                     sizes="192px"
                   />
                 </div>
 
                 <div className="flex-1 text-center sm:text-left">
-                  <h2 className="heading-3 mb-2 text-brand-primary">{member.name}</h2>
-                  <p className="mb-4 leading-relaxed text-muted">{member.title}</p>
+                  <h2 className="heading-3 mb-2 text-brand-accent">{member.name}</h2>
+                  <p className="mb-4 leading-relaxed text-text-light">{member.title}</p>
                   
                   {member.links.length > 0 && (
                     <div className="mb-4 flex flex-wrap gap-2 justify-center sm:justify-start">
@@ -70,7 +70,7 @@ export function TeamModal({ member, onClose }: TeamModalProps) {
                         <a
                           key={idx}
                           href={link.href}
-                          className="inline-flex items-center gap-2 rounded-lg bg-brand-accent/10 px-3 py-2 text-sm font-medium text-brand-accent transition-colors hover:bg-brand-accent hover:text-white"
+                          className="inline-flex items-center gap-2 rounded-lg bg-brand-primary-50 px-3 py-2 text-sm font-medium text-brand-primary transition-colors hover:bg-brand-primary hover:text-white"
                           aria-label={link.label || link.type}
                         >
                           {link.type === 'email' && <Mail size={16} />}
@@ -85,8 +85,8 @@ export function TeamModal({ member, onClose }: TeamModalProps) {
               </div>
 
               <div className="mt-6">
-                <h3 className="heading-4 mb-3 text-brand-primary">Biography</h3>
-                <p className="leading-relaxed text-slate-600">{member.bio}</p>
+                <h3 className="heading-4 mb-3 text-brand-accent">Biography</h3>
+                <p className="leading-relaxed text-text-light">{member.bio}</p>
               </div>
             </motion.div>
           </div>

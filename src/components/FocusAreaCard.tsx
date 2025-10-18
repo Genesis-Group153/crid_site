@@ -38,14 +38,14 @@ export function FocusAreaCard({ title, points, iconName, index }: FocusAreaCardP
       transition={{ delay: index * 0.1, duration: 0.5 }}
       className="card group h-full"
     >
-      <div className="mb-4 inline-flex rounded-lg bg-brand-accent/10 p-3 text-brand-accent transition-colors group-hover:bg-brand-accent group-hover:text-white">
+      <div className="mb-4 inline-flex rounded-lg bg-brand-primary-50 p-3 text-brand-primary transition-colors group-hover:bg-brand-primary group-hover:text-white">
         <Icon size={28} />
       </div>
-      <h3 className="heading-4 mb-4 text-brand-primary">{title}</h3>
+      <h3 className="heading-4 mb-4 text-brand-accent">{title}</h3>
       <ul className="space-y-2">
         {points.map((point, idx) => (
-          <li key={idx} className="flex items-start gap-2 text-sm text-slate-600">
-            <span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-brand-accent" />
+          <li key={idx} className="flex items-start gap-2 text-sm text-text-light">
+            <span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-brand-secondary" />
             <span>{point}</span>
           </li>
         ))}

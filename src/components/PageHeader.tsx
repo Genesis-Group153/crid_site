@@ -8,7 +8,7 @@ interface PageHeaderProps {
 
 export function PageHeader({ title, breadcrumbs }: PageHeaderProps) {
   return (
-    <div className="bg-gradient-to-r from-brand-primary to-brand-secondary py-12 md:py-16">
+    <div className="bg-gradient-to-r from-brand-primary to-brand-primary-800 py-12 md:py-16">
       <div className="container-custom">
         {breadcrumbs && breadcrumbs.length > 0 && (
           <nav aria-label="Breadcrumb" className="mb-4">

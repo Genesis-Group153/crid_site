@@ -48,7 +48,7 @@ export default async function FocusAreasPage() {
       {/* CTA */}
       <section className="section-padding bg-surface">
         <div className="container-custom text-center">
-          <h2 className="heading-2 mb-4 text-brand-primary">
+          <h2 className="heading-2 mb-4 text-brand-accent">
             Let&apos;s Collaborate on Your Next Initiative
           </h2>
           <p className="body-large mx-auto mb-8 max-w-2xl">
