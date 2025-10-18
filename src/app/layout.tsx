@@ -62,6 +62,11 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  icons: {
+    icon: '/crid/logo.png',
+    shortcut: '/crid/logo.png',
+    apple: '/crid/logo.png',
+  },
 };
 
 export default function RootLayout({
