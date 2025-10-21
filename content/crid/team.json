@@ -1,10 +1,13 @@
 [
   {
-    "name": "Atuhaire Edgar",
-    "title": "Executive Director",
+    "name": "Atuhaire Edgar (BA Educ.(MUK), MPHL.(UCU), PhD.Cand. UG (Population, Family and Reproductive Health) Research Fellow-WHO/HRP",
+    "title": "Founder and Executive Director",
     "photo": "/crid/Atuhaire.png",
-    "bio": "Public Health Specialist & Educator with 16+ years of experience in health systems strengthening, institutional development, and program implementation across East Africa. WHO/HRP Research Fellow and PhD Candidate (University of Ghana) specializing in Population, Family, and Reproductive Health. Leads CRID in research, gender & development, institutional capacity building, and youth empowerment; contributor to national strategies, training manuals, and policy reforms.",
-    "links": []
+    "bio": "Atuhaire Edgar is a distinguished Public Health and Program Management Specialist with over 16 years of leadership experience in health systems strengthening, institutional development, and program implementation across East Africa. He is the Founder and Executive Director of CRID International, a development organisation committed to promoting health equity, institutional capacity building, and community resilience through research, innovation, and development practice. Edgar is a PhD Candidate and WHO/HRP Research Fellow in Public Health at the University of Ghana, specialising in Population, Family, and Reproductive Health. His doctoral research focuses on the impact of peer support interventions on stigma reduction and viral load suppression among adolescents living with HIV in Northern Uganda. He holds a Master of Public Health Leadership from Uganda Christian University and a Bachelor's in Education from Makerere University. A passionate educator, he lectures at Uganda Christian University and Victoria University, teaching courses in Health Policy, Health Systems, and Sexual and Reproductive Health. Edgar's professional journey spans work with the Ministry of Health–Uganda, Society for Family Health (Rwanda), and several international organisations, where he has led large-scale public health and education programs in HIV prevention, adolescent health, and maternal and child health. His expertise includes strategic program management, policy development, capacity building, and institutional reform. Edgar is committed to strengthening African institutions to deliver sustainable, people-centred health outcomes. His work reflects a deep belief in community-led development, evidence-based decision-making, and integrated health systems that advance equity, resilience, and transformative change.",
+    "links": [
+      {"type":"email","href":"mailto:edgatuhaire@gmail.com"},
+      {"type":"tel","href":"tel:+256772699471"}
+    ]
   },
   {
     "name": "Humphrey Atwijukiire, BNS, MHSR",
