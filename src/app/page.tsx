@@ -30,14 +30,15 @@ export default function Home() {
       <OrganizationSchema />
       
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-brand-primary via-brand-primary-800 to-brand-accent py-12 sm:py-16 md:py-20 lg:py-28 text-white">
+      <section className="relative overflow-hidden bg-gradient-to-br from-brand-primary via-brand-primary-800 to-brand-accent text-white" style={{padding: 'clamp(3rem, 8vw, 10rem) 0'}}>
         <div className="container-custom">
-          <div className="mx-auto max-w-5xl text-center px-4">
+          <div className="mx-auto text-center" style={{maxWidth: 'min(90%, 1200px)', padding: '0 clamp(1rem, 3vw, 2rem)'}}>
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="heading-1 mb-4 sm:mb-6"
+              className="heading-1"
+              style={{marginBottom: 'clamp(1rem, 3vw, 2rem)'}}
             >
               Research. Skills. Impact.
             </motion.h1>
@@ -46,15 +47,16 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.6 }}
-              className="mx-auto max-w-4xl mb-8 sm:mb-10"
+              className="mx-auto"
+              style={{maxWidth: 'min(100%, 900px)', marginBottom: 'clamp(2rem, 4vw, 3rem)'}}
             >
-              <p className="text-base sm:text-lg md:text-xl leading-relaxed text-slate-100 mb-4 sm:mb-6">
+              <p className="leading-relaxed text-slate-100" style={{fontSize: 'clamp(0.938rem, 2vw, 1.25rem)', marginBottom: 'clamp(1rem, 2vw, 1.5rem)'}}>
                 CRID International (Centre for Research, Innovations, and Development) is a multidisciplinary research, training, and capacity-building organization advancing sustainable development, institutional excellence, and human capital growth across Africa.
               </p>
-              <p className="text-base sm:text-lg md:text-xl leading-relaxed text-slate-100 mb-4 sm:mb-6">
+              <p className="leading-relaxed text-slate-100" style={{fontSize: 'clamp(0.938rem, 2vw, 1.25rem)', marginBottom: 'clamp(1rem, 2vw, 1.5rem)'}}>
                 We translate evidence into practical interventions, strengthen systems in health, education, gender, and socio-economic development, and operate with the philosophy of <span className="font-semibold text-brand-secondary-100">&quot;Skilling for the Future.&quot;</span>
               </p>
-              <p className="text-base sm:text-lg md:text-xl leading-relaxed text-slate-100">
+              <p className="leading-relaxed text-slate-100" style={{fontSize: 'clamp(0.938rem, 2vw, 1.25rem)'}}>
                 With work across East, Central, and West Africa, CRID delivers programs in RMNCAH, SRHR, gender analytics, organizational development, youth/women empowerment, leadership, mentorship, and education skilling — in partnership with governments, universities, development partners, and civil society.
               </p>
             </motion.div>
@@ -63,12 +65,13 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.6 }}
-              className="flex flex-col sm:flex-row gap-4 justify-center"
+              className="flex flex-col sm:flex-row justify-center"
+              style={{gap: 'clamp(0.75rem, 2vw, 1.5rem)'}}
             >
               <Link href="/focus-areas" className="btn-primary bg-brand-secondary hover:bg-brand-secondary-700">
                 Explore Our Work
               </Link>
-              <Link href="/contact" className="inline-flex items-center justify-center rounded-lg border-2 border-white bg-transparent px-6 py-3 text-base font-semibold text-white transition-all hover:bg-white hover:text-brand-primary">
+              <Link href="/contact" className="btn-secondary !border-white !text-white hover:!bg-white hover:!text-brand-primary">
                 Get in Touch
               </Link>
             </motion.div>
@@ -79,14 +82,14 @@ export default function Home() {
       {/* Services Preview */}
       <section className="section-padding bg-white">
         <div className="container-custom">
-          <div className="mb-12 text-center">
-            <h2 className="heading-2 mb-4 text-brand-primary">Our Services</h2>
-            <p className="body-large mx-auto max-w-3xl">
+          <div className="text-center" style={{marginBottom: 'clamp(2rem, 5vw, 4rem)'}}>
+            <h2 className="heading-2 text-brand-accent" style={{marginBottom: 'clamp(1rem, 2vw, 1.5rem)'}}>Our Core Services</h2>
+            <p className="body-large mx-auto" style={{maxWidth: 'min(100%, 800px)'}}>
               Comprehensive solutions for research, training, and institutional capacity building.
             </p>
           </div>
           
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-responsive">
             {services.map((service, index) => (
               <ServiceCard
                 key={index}

@@ -37,34 +37,44 @@ export function NavBar() {
       }`}
     >
       <nav className="container-custom" aria-label="Main navigation">
-        <div className="flex h-20 items-center justify-between sm:h-24">
+        <div className="flex items-center justify-between" style={{height: 'clamp(4rem, 8vw, 6rem)'}}>
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3" aria-label="CRID International home">
+          <Link href="/" className="flex items-center gap-2 sm:gap-3" aria-label="CRID International home">
             <Image
               src="/crid/logo.png"
               alt="CRID International"
               width={80}
               height={80}
               priority
-              className="h-16 w-auto sm:h-20"
+              className="w-auto"
+              style={{height: 'clamp(3rem, 6vw, 5rem)'}}
             />
-            <span className="hidden font-serif text-xl font-bold text-brand-primary md:block lg:text-2xl">
+            <span className="hidden font-serif font-bold text-brand-primary md:block" style={{fontSize: 'clamp(1.125rem, 2vw, 1.5rem)'}}>
               CRID International
             </span>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden items-center gap-0.5 xl:flex">
+          <div className="hidden items-center xl:flex" style={{gap: 'clamp(0.125rem, 0.5vw, 0.5rem)'}}>
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="whitespace-nowrap rounded-lg px-3 py-2 text-sm font-medium text-slate-700 transition-colors hover:bg-surface hover:text-brand-primary"
+                className="whitespace-nowrap rounded-lg transition-colors hover:bg-surface hover:text-brand-primary"
+                style={{
+                  padding: 'clamp(0.375rem, 1vw, 0.5rem) clamp(0.625rem, 1.5vw, 0.875rem)',
+                  fontSize: 'clamp(0.813rem, 1.2vw, 0.938rem)',
+                  fontWeight: 500
+                }}
               >
                 {item.label}
               </Link>
             ))}
-            <Link href="/contact" className="btn-primary ml-2 whitespace-nowrap">
+            <Link 
+              href="/contact" 
+              className="btn-primary whitespace-nowrap"
+              style={{marginLeft: 'clamp(0.25rem, 1vw, 0.5rem)'}}
+            >
               Work With Us
             </Link>
           </div>
