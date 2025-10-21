@@ -47,8 +47,16 @@
     "photo": "/crid/Samuel.png",
     "bio": "Dr. Samuel Tumwesigye has over fifteen years of experience in agriculture, climate adaptation and rural development. In his career practice, working as a Program Officer, Technical Specialist and Senior Specialist at UNDP FAO, GCA, IFAD and BATU, in Africa and Asia, Samuel programed and implemented climate resilient agriculture development programs and also supported policy formulation. His roles included climate adaptation planning and programming for transformative systems change—covering natural and agri-food systems—aimed at scaling climate adaptation and mobilizing impactful climate investments. He has extensively led sectoral and landscape assessments, generating evidence base to drive informed policies, climate adaptation planning, finance mobilization and partnerships building for a resilient Agriculture Sector. He holds a Doctor of Science from KU Leuven, Belgium, Master of Science in Rural Development from Ghent University, and Bachelor of Science in Agriculture, from Makerere University Kampala, Uganda. His doctoral research focused on spatial analysis and scenario modelling of rural-urban interaction, and climate change impacts and land use change. Samuel's career drive is to leverage his expertise and contribute to building climate-resilient agriculture and rural development, while enhancing food security and poverty and rural livelihoods in the Global South. In his free time, Samuel enjoys reading, cycling through nature paths, watching football and playing games with his twins.",
     "links": [
-      {"type":"email","href":"mailto:Sammykahembo@gmail.com"}
+      {"type":"email","href":"mailto:Sammykahembo@gmail.com"},
+      {"type":"tel","href":"tel:+256755703098"}
     ]
+  },
+  {
+    "name": "Dr. Pontian Kabeera (PhD)",
+    "title": "Technical Advisor: Inclusive, Competence-based and Special Education",
+    "photo": "/crid/Pontian.png",
+    "bio": "Dr. Pontian Kabeera is an experienced education specialist and Technical Advisor focusing on Inclusive, Competence-based and Special Education at CRID International. With extensive expertise in educational policy, curriculum development, and inclusive pedagogies, Dr. Kabeera provides strategic guidance on transforming education systems to ensure equitable access and quality learning for all learners, including those with special educational needs. His work emphasizes competence-based approaches that prepare learners with practical skills for the modern workforce, while promoting inclusive practices that leave no one behind. Dr. Kabeera is committed to advancing education equity, strengthening teacher capacity, and building resilient, learner-centered education systems across Africa.",
+    "links": []
   }
 ]
 
