@@ -114,9 +114,22 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="mt-12 border-t border-white/10 pt-8">
           <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
-            <p className="text-sm text-slate-300">
-              © {currentYear} CRID International Limited. All rights reserved.
-            </p>
+            <div className="text-center sm:text-left">
+              <p className="text-sm text-slate-300">
+                © {currentYear} CRID International Limited. All rights reserved.
+              </p>
+              <p className="mt-1 text-xs text-slate-400">
+                Powered by:{' '}
+                <a
+                  href="https://www.genesiscodeworks.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-brand-secondary hover:text-brand-secondary-100 transition-colors"
+                >
+                  Genesis Codeworks Limited
+                </a>
+              </p>
+            </div>
             <div className="flex gap-6 text-sm text-slate-300">
               <Link href="#" className="hover:text-brand-secondary">
                 Privacy Policy
