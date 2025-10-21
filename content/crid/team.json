@@ -36,7 +36,10 @@
     "title": "Director of Research & Programs",
     "photo": "/crid/Dr.png",
     "bio": "Dr Bongomin is an Infectious Diseases Physician and Lecturer in Medical Microbiology and Internal Medicine at Gulu University School of Medicine, Uganda. He holds an MBChB, an M.Med in Internal Medicine, and MSc Medical Microbiology. Dr. Bongomin has extensive experience in clinical research, medical education, and implementation science in resource-limited settings. He has authored over 300 peer-reviewed publications and book chapters, with his work cited more than 9,500 times worldwide. His research focuses on infectious diseases epidemiology, fungal infections, antimicrobial resistance, and health systems strengthening. Dr. Bongomin previously served on the Gulu University Research Ethics Committee and has been instrumental in promoting community-based research and the ethical conduct of studies involving vulnerable populations. He has led several studies in Uganda and the UK. In his current role as Director for Research and Programs at the Centre for Research Innovations and Development (CRID), Dr. Bongomin provides strategic leadership in research design, ethics oversight, program implementation, and capacity development. His professional interests include community engagement in health research, research ethics, and the mentorship of early-career investigators to strengthen Africa's health research and innovation ecosystem.",
-    "links": []
+    "links": [
+      {"type":"email","href":"mailto:drbongomin@gmail.com"},
+      {"type":"tel","href":"tel:+256784523395"}
+    ]
   },
   {
     "name": "Dr. Samuel Tumwesigye (PhD)",
